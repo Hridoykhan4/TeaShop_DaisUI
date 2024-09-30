@@ -45,6 +45,7 @@
       .font {
         font-family: "Manrope", sans-serif;
       }
+     
     </style>
 
     <title>Document</title>
@@ -52,24 +53,75 @@
 
   <body class="font">
     <header class="container mx-auto">
-      <div class="my-20">
-        <div class="flex justify-center items-center flex-col lg:flex-row">
+    <!-- Navbar -->
+     <nav class="lg:px-32 bg-white shadow-sm">
+      <div class="navbar ">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class=" btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a>Home</a></li>
+               <li><a>Menu</a></li>
+               <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <img src="images/Tea.jpg" class="w-20" alt="">
+          <p class="font-bold tracking-wide">ChayWalee</p>
+ 
+        </div>
+
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 font-bold">
+            <li><a>Home</a></li>
+            <li><a>Menu</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="navbar-end flex gap-3">
+        <p class="text-lg hidden md:block">Login/Register</p>
+        <i class="fa-solid hidden md:block fa-search text-xl"></i>
+        <i class="fa-solid fa-bag-shopping text-xl"></i>
+        </div>
+      </div>
+
+     </nav>
+
+
+      <div class="my-4 hero">
+        <div class="flex hero-content justify-center items-center flex-col lg:flex-row">
           <div>
-            <h1 class="text-7xl font-extrabold">
+            <h1 class="lg:text-7xl md:text-5xl text-4xl font-extrabold">
               It's good <br />
               tea time at The <br />
               Tea House
             </h1>
-            <p class="py-6">
+            <p class="py-4">
               Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
               Your Taste Buds.
             </p>
-            <button class="btn btn-primary">Explore More</button>
+            <button class="btn bg-gradient-to-r flex items-center from-orange-400 to bg-red-500 text-white">Explore More <i class="fa-solid fa-arrow-right text-xl ms-2 animate-pulse"></i></button>
           </div>
+
           <div>
-            <img src="images/banner.png" class="max-w-sm" />
+            <img src="images/banner.png" class="max-w-sm"/>
             <div
-              class="-mt-20 ml-4 size-16 bg-white flex w-60 items-center gap-4 rounded-lg p-5 drop-shadow-md"
+              class="-mt-32 ml-16 size-16 bg-white flex w-60 items-center gap-4 rounded-lg p-5 drop-shadow-md"
             >
               <div>
                 <i class="fa-solid fa-star text-3xl text-amber-400"></i>
@@ -80,6 +132,7 @@
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </header>
@@ -88,7 +141,7 @@
       <!-- Featured Section -->
       <section class="text-center my-24">
         <h2 class="text-4xl font-extrabold mb-5">Our Featured Products</h2>
-        <p class="lg:max-w-3xl mb-10 mx-auto">
+        <p class="lg:max-w-3xl mb-10 mx-auto leading-6 tracking-wide px-4 font-medium">
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration in some form, by injected
           humour, or randomised words which don't look even slightly believable.
@@ -97,70 +150,64 @@
         <!-- featured tea card container -->
         <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           <!-- first card -->
-          <div
-            class="card p-6 bg-gradient-to-r from-[#F4f4F4] to-[244, 244, 244, 0] shadow-xl"
-          >
+          <div class="card p-6 bg-gradient-to-r from-[#F4f4F4] to-[244, 244, 244, 0] shadow-xl">
             <figure>
-              <img src="images/tea-1.png" alt="Shoes" />
+              <img src="images/tea-1.png" alt="Milk Tea" />
             </figure>
             <div class="text-center card-body">
               <h2 class="text-2xl font-bold">Milk Tea</h2>
-              <p>Creamer could be replaced by fresh milk</p>
+              <p>Rich and creamy, blending fresh milk with high-quality tea leaves for a smooth, indulgent taste.</p>
             </div>
           </div>
           <!-- second card -->
-          <div
-            class="card p-6 bg-gradient-to-r from-[#F4f4F4] to-[244, 244, 244, 0] shadow-xl"
-          >
+          <div class="card p-6 bg-gradient-to-r from-[#F4f4F4] to-[244, 244, 244, 0] shadow-xl">
             <figure>
-              <img src="images/tea-2.png" alt="Shoes" />
+              <img src="images/tea-2.png" alt="Black Tea" />
             </figure>
             <div class="text-center card-body">
-              <h2 class="text-2xl font-bold">Black Tea</h2>
-              <p>Creamer could be replaced by fresh milk</p>
+              <h2 class="text-2xl font-bold">Classic Black Tea</h2>
+              <p>Bold and robust, offering a full-bodied flavor that pairs perfectly with or without milk.</p>
             </div>
           </div>
           <!-- third card -->
-          <div
-            class="card p-6 bg-gradient-to-r from-[#F4f4F4] to-[244, 244, 244, 0] shadow-xl"
-          >
+          <div class="card p-6 bg-gradient-to-r from-[#F4f4F4] to-[244, 244, 244, 0] shadow-xl">
             <figure>
-              <img src="images/tea-3.png" alt="Shoes" />
+              <img src="images/tea-3.png" alt="Lemon Tea" />
             </figure>
             <div class="text-center card-body">
-              <h2 class="text-2xl font-bold">Lemon Tea</h2>
-              <p>Creamer could be replaced by fresh milk</p>
+              <h2 class="text-2xl font-bold">Refreshing Lemon Tea</h2>
+              <p>Zesty and refreshing, infused with natural lemon for a crisp, revitalizing tea experience.</p>
             </div>
           </div>
           <!-- fourth card -->
-          <div
-            class="card p-6 bg-gradient-to-r from-[#F4f4F4] to-[244, 244, 244, 0] shadow-xl"
-          >
+          <div class="card p-6 bg-gradient-to-r from-[#F4f4F4] to-[244, 244, 244, 0] shadow-xl">
             <figure>
-              <img src="images/tea-4.png" alt="Shoes" />
+              <img src="images/tea-4.png" alt="Green Tea" />
             </figure>
             <div class="text-center card-body">
-              <h2 class="text-2xl font-bold">Green Tea</h2>
-              <p>Creamer could be replaced by fresh milk</p>
+              <h2 class="text-2xl font-bold">Organic Green Tea</h2>
+              <p>Light and earthy, known for its refreshing and detoxifying properties, perfect for daily wellness.</p>
             </div>
           </div>
         </div>
+        
+
       </section>
       <!-- great tea fresh tea section -->
       <section class="my-24 flex gap-12 flex-col md:flex-row">
         <div class="grid gap-8 grid-cols-1 md:grid-cols-2 flex-1">
           <div
-            class="rounded-lg h-36 bg-gradient-to-r from-red-500 via-red-500 to-orange-400 opacity-10"
+            class="rounded-lg h-36 bg-gradient-to-r from-red-500  to-orange-400 opacity-10"
           ></div>
 
           <div
-            class="row-span-2 bg-[#E6A6231A] rounded-lg p-8 flex justify-center"
+            class="row-span-2 bg-[#E6A6231A] rounded-lg p-8 flex items-center justify-center"
           >
             <img src="images/fresh-1.png" alt="" />
           </div>
 
           <div
-            class="row-span-2 bg-[#5776391a] rounded-lg p-8 flex justify-center"
+            class="row-span-2 bg-[#5776391A] rounded-lg p-8 flex items-center justify-center"
           >
             <img src="images/fresh-2.png" alt="" />
           </div>
@@ -170,11 +217,11 @@
           ></div>
         </div>
 
-        <div class="space-y-5 flex-1">
-          <h3 class="font-extrabold text-xl md:text-4xl">
-            Great Tea, Freshly Presented
+        <div class="space-y-7 flex-1">
+          <h3 class="font-extrabold text-xl md:text-4xl tracking-wide leading-10">
+            Great Tea, Freshly <br class="hidden md:block"> Presented
           </h3>
-          <p>
+          <p class="leading-8">
             The meaning of gong cha is chanese is to provide the best tea to
             emperor from all possessions . It represents the highest quality and
             self expectation. Establishing in 2006, Gong cha had been deeply
@@ -182,12 +229,12 @@
             unique customized service orginated from Taiwan.
           </p>
           <h2 class="text-xl font-extrabold">Unique Test</h2>
-          <p>
+          <p class="leading-7">
             A Unique and different style from other teapots gives a luxurious
             and minimalist impression
           </p>
           <h2 class="text-xl font-extrabold">Premium Quality</h2>
-          <p>
+          <p class="leading-7">
             Premium Quality that makes tea more elegant and more durable when
             you use it.
           </p>
@@ -196,12 +243,12 @@
 
       <!-- Super Client Section -->
       <section
-        class="my-24 gap-12 rounded-xl px-16 py-24 flex flex-col md:flex-row bg-gradient-to-r from-[#FF8938] to-[#FF0000]"
+        class="my-24 gap-14 rounded-xl px-16 py-24 flex flex-col md:flex-row bg-gradient-to-r from-[#FF8938] to-[#FF0000]"
       >
         <div class="flex items-center lg:pr-28">
           <div class="space-y-5">
-            <h1 class="text-5xl text-white font-extrabold">
-              Meet Our Super <br />
+            <h1 class="md:text-5xl text-3xl text-white font-extrabold">
+              Meet Our Super <br class="hidden md:block"  >
               Clients
             </h1>
             <p class="text-white">
@@ -210,7 +257,7 @@
               injected humour, or randomised words which don't look even
               slightly believable.
             </p>
-            <button class="btn btn-info text-white">Show All</button>
+            <button class="btn bg-gradient-to-r from-blue-300 to-blue-900 text-white">Show All</button>
           </div>
         </div>
         <!-- review container -->
@@ -374,5 +421,6 @@
         <p>© 2027 UIDesign.to - All rights reserved.</p>
       </div>
     </footer>
+
   </body>
 </html>
