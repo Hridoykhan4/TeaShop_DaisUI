@@ -45,7 +45,6 @@
       .font {
         font-family: "Manrope", sans-serif;
       }
-     
     </style>
 
     <title>Document</title>
@@ -53,58 +52,60 @@
 
   <body class="font">
     <header class="container mx-auto">
-    <!-- Navbar -->
-     <nav class="lg:px-32 bg-white shadow-sm">
-      <div class="navbar ">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class=" btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16" />
-              </svg>
+      <!-- Navbar -->
+      <nav class="lg:px-32 bg-white shadow-sm">
+        <div class="navbar">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Home</a></li>
+                <li><a>Menu</a></li>
+                <li><a>Contact</a></li>
+              </ul>
             </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <img src="images/Tea.jpg" class="w-20" alt="" />
+            <p class="font-bold tracking-wide">ChayWalee</p>
+          </div>
+
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 font-bold">
               <li><a>Home</a></li>
-               <li><a>Menu</a></li>
-               <li><a>Contact</a></li>
+              <li><a>Menu</a></li>
+              <li><a>Contact</a></li>
             </ul>
           </div>
-          <img src="images/Tea.jpg" class="w-20" alt="">
-          <p class="font-bold tracking-wide">ChayWalee</p>
- 
+
+          <div class="navbar-end flex gap-3">
+            <p class="text-lg hidden md:block">Login/Register</p>
+            <i class="fa-solid hidden md:block fa-search text-xl"></i>
+            <i class="fa-solid fa-bag-shopping text-xl"></i>
+          </div>
         </div>
+      </nav>
 
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1 font-bold">
-            <li><a>Home</a></li>
-            <li><a>Menu</a></li>
-            <li><a>Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="navbar-end flex gap-3">
-        <p class="text-lg hidden md:block">Login/Register</p>
-        <i class="fa-solid hidden md:block fa-search text-xl"></i>
-        <i class="fa-solid fa-bag-shopping text-xl"></i>
-        </div>
-      </div>
-
-     </nav>
-
-
-      <div class="my-4 hero">
-        <div class="flex hero-content gap-8 justify-center items-center flex-col lg:flex-row">
+      <div class="my-4 hero lg:px-32">
+        <div
+          class="flex hero-content gap-8 justify-center items-center flex-col lg:flex-row"
+        >
           <div class="flex-1">
             <h1 class="lg:text-7xl md:text-5xl text-4xl font-extrabold">
               It's good <br />
@@ -115,11 +116,16 @@
               Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
               Your Taste Buds.
             </p>
-            <button class="btn bg-gradient-to-r flex items-center from-orange-400 to bg-red-500 text-white">Explore More <i class="fa-solid fa-arrow-right text-xl ms-2 animate-pulse"></i></button>
+            <button
+              class="btn bg-gradient-to-r flex items-center from-orange-400 to bg-red-500 text-white"
+            >
+              Explore More
+              <i class="fa-solid fa-arrow-right text-xl ms-2 animate-pulse"></i>
+            </button>
           </div>
 
           <div class="flex-1">
-            <img src="images/banner.png" class="w-full"/>
+            <img src="images/banner.png" class="w-full" />
             <div
               class="-mt-32 ml-16 size-16 bg-white flex w-60 items-center gap-4 rounded-lg p-5 drop-shadow-md"
             >
@@ -132,16 +138,18 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </header>
 
     <main class="container mx-auto">
       <!-- Featured Section -->
+
       <section class="text-center my-24">
-        <h2 class="text-4xl font-extrabold my-12 ">Our Featured Products</h2>
-        <p class="lg:max-w-3xl mb-10 mx-auto leading-6 tracking-wide px-4 font-medium">
+        <h2 class="text-4xl font-extrabold mb-6">Our Featured Products</h2>
+        <p
+          class="lg:max-w-3xl mb-10 mx-auto leading-6 tracking-wide px-4 font-medium"
+        >
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration in some form, by injected
           humour, or randomised words which don't look even slightly believable.
@@ -150,54 +158,72 @@
         <!-- featured tea card container -->
         <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           <!-- first card -->
-          <div class="card p-6 bg-gradient-to-r from-[#F4f4F4] to-[244, 244, 244, 0] shadow-xl">
+          <div
+            class="card p-6 bg-gradient-to-r from-[#F4f4F4] to-[244, 244, 244, 0] shadow-xl"
+          >
             <figure>
               <img src="images/tea-1.png" alt="Milk Tea" />
             </figure>
             <div class="text-center card-body">
               <h2 class="text-2xl font-bold">Milk Tea</h2>
-              <p>Rich and creamy, blending fresh milk with high-quality tea leaves for a smooth, indulgent taste.</p>
+              <p>
+                Rich and creamy, blending fresh milk with high-quality tea
+                leaves for a smooth, indulgent taste.
+              </p>
             </div>
           </div>
           <!-- second card -->
-          <div class="card p-6 bg-gradient-to-r from-[#F4f4F4] to-[244, 244, 244, 0] shadow-xl">
+          <div
+            class="card p-6 bg-gradient-to-r from-[#F4f4F4] to-[244, 244, 244, 0] shadow-xl"
+          >
             <figure>
               <img src="images/tea-2.png" alt="Black Tea" />
             </figure>
             <div class="text-center card-body">
               <h2 class="text-2xl font-bold">Classic Black Tea</h2>
-              <p>Bold and robust, offering a full-bodied flavor that pairs perfectly with or without milk.</p>
+              <p>
+                Bold and robust, offering a full-bodied flavor that pairs
+                perfectly with or without milk.
+              </p>
             </div>
           </div>
           <!-- third card -->
-          <div class="card p-6 bg-gradient-to-r from-[#F4f4F4] to-[244, 244, 244, 0] shadow-xl">
+          <div
+            class="card p-6 bg-gradient-to-r from-[#F4f4F4] to-[244, 244, 244, 0] shadow-xl"
+          >
             <figure>
               <img src="images/tea-3.png" alt="Lemon Tea" />
             </figure>
             <div class="text-center card-body">
               <h2 class="text-2xl font-bold">Refreshing Lemon Tea</h2>
-              <p>Zesty and refreshing, infused with natural lemon for a crisp, revitalizing tea experience.</p>
+              <p>
+                Zesty and refreshing, infused with natural lemon for a crisp,
+                revitalizing tea experience.
+              </p>
             </div>
           </div>
           <!-- fourth card -->
-          <div class="card p-6 bg-gradient-to-r from-[#F4f4F4] to-[244, 244, 244, 0] shadow-xl">
+          <div
+            class="card p-6 bg-gradient-to-r from-[#F4f4F4] to-[244, 244, 244, 0] shadow-xl"
+          >
             <figure>
               <img src="images/tea-4.png" alt="Green Tea" />
             </figure>
             <div class="text-center card-body">
               <h2 class="text-2xl font-bold">Organic Green Tea</h2>
-              <p>Light and earthy, known for its refreshing and detoxifying properties, perfect for daily wellness.</p>
+              <p>
+                Light and earthy, known for its refreshing and detoxifying
+                properties, perfect for daily wellness.
+              </p>
             </div>
           </div>
         </div>
-        
-
       </section>
       <!-- great tea fresh tea section -->
-      <!-- <section class="my-24 flex gap-12 flex-col md:flex-row">
+      <section class="my-24 flex gap-12 flex-col md:flex-row">
         <div class="grid gap-8 grid-cols-1 md:grid-cols-2 flex-1">
           <div
-            class="rounded-lg h-36 bg-gradient-to-r from-red-500  to-orange-400 opacity-10"
+            class="rounded-lg h-36 bg-gradient-to-r from-red-500 to-orange-400 opacity-10"
           ></div>
 
           <div
@@ -218,8 +244,11 @@
         </div>
 
         <div class="space-y-7 flex-1">
-          <h3 class="font-extrabold text-xl md:text-4xl tracking-wide leading-10">
-            Great Tea, Freshly <br class="hidden md:block"> Presented
+          <h3
+            class="font-extrabold text-xl md:text-4xl tracking-wide leading-10"
+          >
+            Great Tea, Freshly <br class="hidden md:block" />
+            Presented
           </h3>
           <p class="leading-8">
             The meaning of gong cha is chanese is to provide the best tea to
@@ -239,7 +268,7 @@
             you use it.
           </p>
         </div>
-      </section> -->
+      </section>
 
       <!-- Super Client Section -->
       <section
@@ -248,7 +277,7 @@
         <div class="flex items-center lg:pr-28">
           <div class="space-y-5">
             <h1 class="md:text-5xl text-3xl text-white font-extrabold">
-              Meet Our Super <br class="hidden md:block"  >
+              Meet Our Super <br class="hidden md:block" />
               Clients
             </h1>
             <p class="text-white">
@@ -257,7 +286,11 @@
               injected humour, or randomised words which don't look even
               slightly believable.
             </p>
-            <button class="btn bg-gradient-to-r from-blue-300 to-blue-900 text-white">Show All</button>
+            <button
+              class="btn bg-gradient-to-r from-blue-300 to-blue-900 text-white"
+            >
+              Show All
+            </button>
           </div>
         </div>
         <!-- review container -->
@@ -323,10 +356,9 @@
         <div class="text-center lg:max-w-4xl mx-auto space-y-3">
           <h1 class="text-5xl font-extrabold mb-5">News & Events</h1>
           <p>
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration in some form, by injected
-            humour, or randomised words which don't look even slightly
-            believable.
+            Stay updated with the latest happenings, offers, and exciting
+            events. Explore exclusive deals and join us on our journey with
+            insights from our community.
           </p>
         </div>
         <div
@@ -334,15 +366,16 @@
         >
           <div class="card shadow-xl">
             <figure>
-              <img src="images/news-1.png" alt="Shoes" />
+              <img src="images/news-1.png" alt="Customer Appreciation Event" />
             </figure>
             <div class="card-body space-y-4">
               <p>Feb 05, 2027</p>
               <h1 class="font-bold text-lg">
-                Collecting 8 points for discount
+                Customer Appreciation Day: Exclusive Discounts!
               </h1>
               <p>
-                There are many variations of passages of Lorem Ipsum available.
+                Join us for a special event where loyal customers earn points
+                for massive discounts. A day of gratitude and savings!
               </p>
               <div class="">
                 <button class="btn btn-primary">Explore More</button>
@@ -351,15 +384,16 @@
           </div>
           <div class="card shadow-xl">
             <figure>
-              <img src="images/news-2.png" alt="Shoes" />
+              <img src="images/news-2.png" alt="New Product Launch" />
             </figure>
             <div class="card-body space-y-4">
               <p>Feb 05, 2027</p>
               <h1 class="font-bold text-lg">
-                Collecting 8 points for discount
+                Introducing Our New Winter Collection
               </h1>
               <p>
-                There are many variations of passages of Lorem Ipsum available.
+                Discover our latest collection designed for comfort and style
+                this winter. Be the first to experience it.
               </p>
               <div class="">
                 <button class="btn btn-primary">Explore More</button>
@@ -368,15 +402,17 @@
           </div>
           <div class="card shadow-xl">
             <figure>
-              <img src="images/news-3.png" alt="Shoes" />
+              <img src="images/news-3.png" alt="Holiday Sale Announcement" />
             </figure>
             <div class="card-body space-y-4">
               <p>Feb 05, 2027</p>
               <h1 class="font-bold text-lg">
-                Collecting 8 points for discount
+                Upcoming Holiday Sale: Get Ready for Big Savings
               </h1>
               <p>
-                There are many variations of passages of Lorem Ipsum available.
+                Our annual holiday sale is just around the corner! Mark your
+                calendars for unbeatable offers and early access to exclusive
+                deals.
               </p>
               <div class="">
                 <button class="btn btn-primary">Explore More</button>
@@ -387,40 +423,138 @@
       </section>
     </main>
 
-    <footer class="bg-base-200 text-base-content p-10">
+    <footer
+      class="bg-gradient-to-r from-green-300 via-green-200 to-green-100 text-base-content p-10"
+    >
       <div
-        class="max-w-7xl mx-auto flex flex-col md:flex-row md:justify-between"
+        class="mb-10 max-w-7xl mx-auto flex flex-col md:flex-row md:justify-between items-center"
       >
-        <div
-          class="footer grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
-        >
-          <nav>
-            <h6 class="footer-title text-lg font-semibold mb-4">Services</h6>
-            <a href="#" class="link link-hover block">Branding</a>
-            <a href="#" class="link link-hover block">Design</a>
-            <a href="#" class="link link-hover block">Marketing</a>
-            <a href="#" class="link link-hover block">Advertisement</a>
-          </nav>
-          <nav>
-            <h6 class="footer-title text-lg font-semibold mb-4">Company</h6>
-            <a href="#" class="link link-hover block">About us</a>
-            <a href="#" class="link link-hover block">Contact</a>
-            <a href="#" class="link link-hover block">Jobs</a>
-            <a href="#" class="link link-hover block">Press kit</a>
-          </nav>
-          <nav>
-            <h6 class="footer-title text-lg font-semibold mb-4">Legal</h6>
-            <a href="#" class="link link-hover block">Terms of use</a>
-            <a href="#" class="link link-hover block">Privacy policy</a>
-            <a href="#" class="link link-hover block">Cookie policy</a>
-          </nav>
+        <div class="flex items-center space-x-4">
+          <img src="images/cup.png" class="w-16" alt="Company Logo" />
+          <h2 class="text-2xl font-bold">Fresh Brews</h2>
+        </div>
+        <div class="flex items-center space-x-4 mt-6 md:mt-0">
+          <span class="text-lg font-semibold">Ready To Get Started?</span>
+          <button
+            class="btn bg-gradient-to-r text-white from-orange-400 to-red-500 hover:from-red-500 hover:to-orange-400 transition duration-300 ease-in-out"
+          >
+            Get Started
+          </button>
         </div>
       </div>
 
-      <div class="mt-8 text-center border-t border-base-300 pt-6">
-        <p>© 2027 UIDesign.to - All rights reserved.</p>
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left"
+      >
+        <nav>
+          <h6 class="footer-title text-lg font-semibold mb-4">Services</h6>
+          <a
+            href="#"
+            class="link link-hover block text-gray-700 hover:text-red-500"
+            >Branding</a
+          >
+          <a
+            href="#"
+            class="link link-hover block text-gray-700 hover:text-red-500"
+            >Design</a
+          >
+          <a
+            href="#"
+            class="link link-hover block text-gray-700 hover:text-red-500"
+            >Marketing</a
+          >
+          <a
+            href="#"
+            class="link link-hover block text-gray-700 hover:text-red-500"
+            >Advertisement</a
+          >
+        </nav>
+        <nav>
+          <h6 class="footer-title text-lg font-semibold mb-4">Company</h6>
+          <a
+            href="#"
+            class="link link-hover block text-gray-700 hover:text-red-500"
+            >About us</a
+          >
+          <a
+            href="#"
+            class="link link-hover block text-gray-700 hover:text-red-500"
+            >Contact</a
+          >
+          <a
+            href="#"
+            class="link link-hover block text-gray-700 hover:text-red-500"
+            >Jobs</a
+          >
+          <a
+            href="#"
+            class="link link-hover block text-gray-700 hover:text-red-500"
+            >Press kit</a
+          >
+        </nav>
+        <nav>
+          <h6 class="footer-title text-lg font-semibold mb-4">Legal</h6>
+          <a
+            href="#"
+            class="link link-hover block text-gray-700 hover:text-red-500"
+            >Terms of use</a
+          >
+          <a
+            href="#"
+            class="link link-hover block text-gray-700 hover:text-red-500"
+            >Privacy policy</a
+          >
+          <a
+            href="#"
+            class="link link-hover block text-gray-700 hover:text-red-500"
+            >Cookie policy</a
+          >
+        </nav>
+        <nav>
+          <h6 class="footer-title text-lg font-semibold mb-4">Social</h6>
+          <a
+            href="#"
+            class="link link-hover block text-gray-700 hover:text-red-500"
+            >Facebook</a
+          >
+          <a
+            href="#"
+            class="link link-hover block text-gray-700 hover:text-red-500"
+            >Twitter</a
+          >
+          <a
+            href="#"
+            class="link link-hover block text-gray-700 hover:text-red-500"
+            >Instagram</a
+          >
+          <a
+            href="#"
+            class="link link-hover block text-gray-700 hover:text-red-500"
+            >LinkedIn</a
+          >
+        </nav>
+      </div>
+
+      <div class="mt-8 text-center border-t border-gray-300 pt-6">
+        <p class="text-gray-600">
+          © 2027 <span class="font-semibold">Fresh Brews</span> - All rights
+          reserved.
+        </p>
+        <div class="mt-4 flex justify-center space-x-4">
+          <a href="#" class="text-gray-700 hover:text-red-500">
+            <i class="fab fa-facebook text-2xl"></i>
+          </a>
+          <a href="#" class="text-gray-700 hover:text-red-500">
+            <i class="fab fa-twitter text-2xl"></i>
+          </a>
+          <a href="#" class="text-gray-700 hover:text-red-500">
+            <i class="fab fa-instagram text-2xl"></i>
+          </a>
+          <a href="#" class="text-gray-700 hover:text-red-500">
+            <i class="fab fa-linkedin text-2xl"></i>
+          </a>
+        </div>
       </div>
     </footer>
-
   </body>
 </html>
