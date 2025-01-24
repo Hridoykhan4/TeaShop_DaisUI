@@ -60,7 +60,7 @@
               <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
+                  class="h-5 md:w-10 md:h-12 w-5"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -143,8 +143,6 @@
     </header>
 
     <main class="container mx-auto">
-      <!-- Featured Section -->
-
       <section class="text-center my-24">
         <h2 class="text-4xl font-extrabold mb-6">Our Featured Products</h2>
         <p
@@ -155,11 +153,8 @@
           humour, or randomised words which don't look even slightly believable.
         </p>
 
-        <!-- featured tea card container -->
         <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-          <!-- first card -->
-          <d
-            iv
+          <div
             class="card p-6 bg-gradient-to-r from-[#F4f4F4] to-[244, 244, 244, 0] shadow-xl"
           >
             <figure>
@@ -172,8 +167,8 @@
                 leaves for a smooth, indulgent taste.
               </p>
             </div>
-          </d>
-          <!-- second card -->
+          </div>
+
           <div
             class="card p-6 bg-gradient-to-r from-[#F4f4F4] to-[244, 244, 244, 0] shadow-xl"
           >
@@ -188,7 +183,7 @@
               </p>
             </div>
           </div>
-          <!-- third card -->
+
           <div
             class="card p-6 bg-gradient-to-r from-[#F4f4F4] to-[244, 244, 244, 0] shadow-xl"
           >
@@ -203,7 +198,7 @@
               </p>
             </div>
           </div>
-          <!-- fourth card -->
+
           <div
             class="card p-6 bg-gradient-to-r from-[#F4f4F4] to-[244, 244, 244, 0] shadow-xl"
           >
@@ -220,7 +215,7 @@
           </div>
         </div>
       </section>
-      <!-- great tea fresh tea section -->
+
       <section class="my-24 flex gap-12 flex-col md:flex-row">
         <div class="grid gap-8 grid-cols-1 md:grid-cols-2 flex-1">
           <div
@@ -240,11 +235,11 @@
           </div>
 
           <div
-            class="rounded-lg h-36 bg-gradient-to-r from-gray-300 to-transparent opacity-100"
+            class="rounded-lg h-36 bg-gradient-to-r from-gray-300 to-transparent"
           ></div>
         </div>
 
-        <div class="space-y-7 flex-1">
+        <div class="space-y-7 px-4 md:px-0 flex-1">
           <h3
             class="font-extrabold text-xl md:text-4xl tracking-wide leading-10"
           >
@@ -271,7 +266,6 @@
         </div>
       </section>
 
-      <!-- Super Client Section -->
       <section
         class="my-24 gap-14 rounded-xl px-16 py-24 flex flex-col md:flex-row bg-gradient-to-r from-[#FF8938] to-[#FF0000]"
       >
@@ -352,7 +346,6 @@
         </div>
       </section>
 
-      <!-- Events Section -->
       <section class="my-24">
         <div class="text-center lg:max-w-4xl mx-auto space-y-3">
           <h1 class="text-5xl font-extrabold mb-5">News & Events</h1>
@@ -363,7 +356,7 @@
           </p>
         </div>
         <div
-          class="grid grid-cols-1 justify-center items-center mt-10 gap-6 md:grid-cols-2 lg:grid-cols-3"
+          class="grid grid-cols-1 items-center mt-10 gap-6 md:grid-cols-2 lg:grid-cols-3"
         >
           <div class="card shadow-xl">
             <figure>
@@ -424,7 +417,7 @@
       </section>
     </main>
 
-    <footer
+    <!--  <footer
       class="bg-gradient-to-r from-green-300 via-green-200 to-green-100 text-base-content p-10"
     >
       <div
@@ -556,7 +549,7 @@
           </a>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <script src="scripts/tea.js"></script>
   </body>
